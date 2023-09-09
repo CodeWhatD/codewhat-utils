@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/dmy1016/codewhat-utils/issues"
   },
-  "homepage": "https://github.com/dmy1016/codewhat-utils#readme"
+  "homepage": "https://github.com/dmy1016/codewhat-utils#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.22.15",
+    "@rollup/plugin-babel": "^6.0.3",
+    "rollup": "^3.29.0"
+  }
 }
