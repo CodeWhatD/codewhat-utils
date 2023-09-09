@@ -6,6 +6,10 @@
   "module": "./dist/index.esm.js",
   "type": "module",
   "types": "./dist/types/index.d.ts",
+  "files": [
+    "es/*",
+    "dist/*"
+  ],
   "scripts": {
     "clean:dist": "rm -rf ./dist",
     "build:types": "npm run clean:dist && tsc -b ./tsconfig.types.json",
