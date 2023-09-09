@@ -2,8 +2,12 @@ import path from "path";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import rollupTypescript from "rollup-plugin-typescript2";
+import { fileURLToPath } from "url";
 import { terser } from "rollup-plugin-terser"; // 读取 package.json 配置
-import pkg from "./package.json"; // 当前运行环境，可通过 cross-env 命令行设置
+import pkg from "./package.json" assert { type: "json" }; // 当前运行环境，可通过 cross-env 命令行设置
+import babel from "@rollup/plugin-babel";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const env = process.env.NODE_ENV; // umd 模式的编译结果文件输出的全局变量名称
 const config = {
   // 入口文件，src/index.ts

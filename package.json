@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "This repository include common tool function",
   "main": "./dist/index.js",
-  "module": "./dist/index.es.js",
+  "module": "./dist/index.esm.js",
+  "type": "module",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
-    "clean:dist": "rimraf dist",
+    "clean:dist": "rm -rf ./dist",
     "build:types": "npm run clean:dist && tsc -b ./tsconfig.types.json",
     "build": "npm run build:types && rollup -c",
     "test": "node test/test.js",
