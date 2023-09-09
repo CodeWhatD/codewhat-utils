@@ -1,0 +1,22 @@
+{
+  "name": "codewhat-utils",
+  "version": "1.0.0",
+  "description": "This repository include common tool function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmy1016/codewhat-utils.git"
+  },
+  "keywords": [
+    "tools"
+  ],
+  "author": "@codeWhat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmy1016/codewhat-utils/issues"
+  },
+  "homepage": "https://github.com/dmy1016/codewhat-utils#readme"
+}
