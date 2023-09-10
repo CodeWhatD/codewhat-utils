@@ -1,3 +1,3 @@
 import flatMenu from "./flatMenu";
-
-export { flatMenu };
+import { isUndefined } from "./checkTypes";
+export { flatMenu, isUndefined };
