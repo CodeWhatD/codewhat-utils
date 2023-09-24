@@ -1,6 +1,12 @@
 import { isUndefined } from "./index";
-import { expect, test } from "vitest";
+import { expect, it, describe } from "vitest";
 
-test("check type is undefined", () => {
-  expect(isUndefined(false)).toBe(false);
+describe("checkType", () => {
+  it("check isUndefined bool", () => {
+    expect(isUndefined(false)).toBe(false);
+  });
+
+  it("check isUndefined undefined", () => {
+    expect(isUndefined(undefined)).toBe(true);
+  });
 });
