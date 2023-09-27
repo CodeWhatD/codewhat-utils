@@ -24,5 +24,9 @@
     /* 指定编译处理的文件列表 */
     "src/*.ts",
     "src/types.ts"
-  ]
+  ],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
 }
