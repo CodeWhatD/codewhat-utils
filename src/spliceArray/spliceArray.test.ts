@@ -11,6 +11,6 @@ describe("spliceArray", () => {
         expect(spliceArray(['a', 'b', 'c'], [0, 2])).toStrictEqual(['b']);
     });
     it("check spliceArray to empty", () => {
-        expect(spliceArray(['a', 'b', 'c'], [2, 0])).toStrictEqual(['b']);
+        expect(spliceArray(['a', 'b', { a: 'c' }], [2, 0])).toStrictEqual(['b']);
     });
 });
