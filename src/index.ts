@@ -1,5 +1,6 @@
+import { isUndefined, isObject, isArray } from "./checkTypes";
 import flatMenu from "./flatMenu";
 import Onion from './onion'
-import { isUndefined, isObject } from "./checkTypes";
+import { segment } from './segment'
 
-export { flatMenu, isUndefined, Onion, isObject };
+export { isUndefined, isObject, isArray, Onion, flatMenu, segment };
