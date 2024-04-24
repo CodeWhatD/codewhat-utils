@@ -1,4 +1,5 @@
 import { readFile, writeFileSync, appendFileSync } from "fs";
+import { isUndefined } from "../checkTypes/index";
 import type { Line } from "./type";
 
 const _n = "\n";
@@ -12,12 +13,18 @@ const loopGeneralLine = (
   isLast: boolean = false
 ) => {
   const [label, prop, localLabel] = line;
-  console.log(localLabel);
+
   let content = `
     {
       // ${label}
       prop:'${prop}',
-      label:'${localLabel === "" ? prop : localLabel}'
+      label:'${
+        localLabel === "" ||
+        localLabel === "undefined" ||
+        isUndefined(localLabel)
+          ? prop
+          : localLabel
+      }'
     },
   `;
   if (isFirst) {
@@ -51,7 +58,12 @@ export const convertColumn = (resource?: string) => {
       const _line = group[index];
       const isFirst = index === 0;
       const isLast = index === group.length - 1;
-      const needWriteLine = loopGeneralLine("basicInfo", _line, isFirst, isLast);
+      const needWriteLine = loopGeneralLine(
+        "basicInfo",
+        _line,
+        isFirst,
+        isLast
+      );
       if (isFirst) {
         writeFileSync("./result.ts", needWriteLine);
       } else {
