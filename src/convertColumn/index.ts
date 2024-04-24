@@ -24,9 +24,10 @@ const loopGeneralLine = (
         isUndefined(localLabel)
           ? prop
           : localLabel
-      }'
-    },
-  `;
+      }',`;
+  content += prop.toUpperCase().includes("AMOUNT")
+    ? `moneyColor: true },`
+    : "},";
   if (isFirst) {
     content = `export const ${key}:CellConfig[] = [${content}`;
   }
@@ -37,7 +38,7 @@ const loopGeneralLine = (
 };
 
 /**
- *
+ * This function is used in my work for fast collect dtg business prop
  * @param resource
  * example is `
  *  基本信息
