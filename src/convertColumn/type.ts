@@ -4,3 +4,5 @@ export type SingleEle = {
 };
 
 export type Elements = SingleEle[];
+
+export type Line = [string, string, string?];

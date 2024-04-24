@@ -1,3 +1,6 @@
-基本信息
-字段A prop1 label1
-字段B prop2 label2
+活期存款利率产品	productName	currentDepositProduct
+收息账户号	recInterestAccountNo	
+协定存款利率	rate	agreedDepositRate
+结束日	endDate	
+签约日期	expectDate	signingDate
+透支利率	overdueRate	overdraftRate
