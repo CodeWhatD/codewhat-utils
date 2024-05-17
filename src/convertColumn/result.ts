@@ -1,37 +1,65 @@
 export const basicInfo:CellConfig[] = [
     {
-      // 活期存款利率产品
-      prop:'productName',
-      label:'currentDepositProduct'
-    },
-  
+      // 机构
+      prop:'officeName',
+      label:'officeName',},
     {
-      // 收息账户号
-      prop:'recInterestAccountNo',
-      label:'recInterestAccountNo'
-    },
-  
+      // 租后通知单编号
+      prop:'businessSerialNo',
+      label:'postLeaseNoticeNo',},
     {
-      // 协定存款利率
-      prop:'rate',
-      label:'agreedDepositRate'
-    },
-  
+      // 币种
+      prop:'currencyName',
+      label:'currencyName',},
     {
-      // 结束日
+      // 扣款金额
+      prop:'amount',
+      label:'deduction',moneyColor: true },
+    {
+      // 业务类型
+      prop:'transactionType',
+      label:'bizType',},
+    {
+      // 租赁类型
+      prop:'interestType',
+      label:'leaseType',},
+    {
+      // 租赁物价格
+      prop:'repayAmount',
+      label:'leaseAmount',moneyColor: true },
+    {
+      // 融资租赁金额
+      prop:'openAmount',
+      label:'financeLeaseAmount',moneyColor: true },
+    {
+      // 结束方式
+      prop:'clearType',
+      label:'overType',},
+    {
+      // 合同起始日期
+      prop:'startDate',
+      label:'contractStartDate',},
+    {
+      // 合同到期日期
       prop:'endDate',
-      label:'endDate'
-    },
-  
+      label:'contractEndDate',},
     {
-      // 签约日期
-      prop:'expectDate',
-      label:'signingDate'
-    },
-  
+      // 承租人编号
+      prop:'clientCode',
+      label:'tenantNo',},
     {
-      // 透支利率
-      prop:'overdueRate',
-      label:'overdraftRate'
-    },
-  ]
+      // 承租人名称
+      prop:'clientName',
+      label:'tenantName',},
+    {
+      // 计息方式
+      prop:'liquidationType',
+      label:'interestCalculationMethod',},
+    {
+      // 还款方式
+      prop:'repaymentWay',
+      label:'repaymentWay',},
+    {
+      // 租赁期限
+      prop:'intervalNum',
+      label:'leaseTerm',},]

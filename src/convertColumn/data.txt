@@ -1,6 +1,16 @@
-活期存款利率产品	productName	currentDepositProduct
-收息账户号	recInterestAccountNo	
-协定存款利率	rate	agreedDepositRate
-结束日	endDate	
-签约日期	expectDate	signingDate
-透支利率	overdueRate	overdraftRate
+机构	officeName	
+租后通知单编号	businessSerialNo	postLeaseNoticeNo
+币种	currencyName	
+扣款金额	amount	deduction
+业务类型	transactionType	bizType
+租赁类型	interestType	leaseType
+租赁物价格	repayAmount	leaseAmount
+融资租赁金额	openAmount	financeLeaseAmount
+结束方式	clearType	overType
+合同起始日期	startDate	contractStartDate
+合同到期日期	endDate	contractEndDate
+承租人编号	clientCode	tenantNo
+承租人名称	clientName	tenantName
+计息方式	liquidationType	interestCalculationMethod
+还款方式	repaymentWay	
+租赁期限	intervalNum	leaseTerm
