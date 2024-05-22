@@ -19,7 +19,8 @@ export const humpResultSplit = (value: string, splitSymbol: string = "_") => {
     .replace(humpResultSplitRegx, (substring: string) => {
       return `${splitSymbol}${substring}`;
     })
-    .toUpperCase();
+    .toUpperCase()
+    .slice(0);
 };
 
 /**
