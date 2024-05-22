@@ -4,9 +4,10 @@ const humpResultSplitRegx = /[A-Z]+/g;
  * example is self operated loan application => selfOperatedLoanApplication
  */
 export const humpInUpMergee = (value: string) => {
-  return value.replace(humpInUpMergeeRegx, (substring: string) => {
+  let _tmpRsult = value.replace(humpInUpMergeeRegx, (substring: string) => {
     return substring.toUpperCase().trim();
   });
+  return _tmpRsult.replace(_tmpRsult[0], _tmpRsult[0].toLowerCase());
 };
 
 /**
@@ -34,4 +35,4 @@ const pipelineMain = (value: string) => {
   };
 };
 
-console.log(pipelineMain("self operated loan application"));
+console.log(pipelineMain("Payable upon maturity"));
